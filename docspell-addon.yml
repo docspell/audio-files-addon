@@ -1,0 +1,29 @@
+meta:
+  name: "audio-files-addon"
+  version: "0.1.0"
+  description: |
+    This addon adds support for audio files. Audio files are processed
+    by a speech-to-text engine and a pdf is generated.
+
+    It doesn't expect any user arguments at the moment. It requires
+    internet access to download model files.
+
+triggers:
+  - final-process-item
+  - final-reprocess-item
+  - existing-item
+
+runner:
+  nix:
+    enable: true
+
+  docker:
+    enable: false
+
+  trivial:
+    enable: true
+    exec: src/addon.scm
+
+options:
+  networking: true
+  collectOutput: true
