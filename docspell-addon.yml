@@ -1,6 +1,6 @@
 meta:
   name: "audio-files-addon"
-  version: "0.1.0"
+  version: "0.2.0-pre"
   description: |
     This addon adds support for audio files. Audio files are processed
     by a speech-to-text engine and a pdf is generated.
