@@ -5,7 +5,7 @@
     utils.url = "github:numtide/flake-utils";
 
     # Nixpkgs / NixOS version to use.
-    nixpkgs.url = "nixpkgs/nixos-21.11";
+    nixpkgs.url = "nixpkgs/nixos-22.05";
   };
 
   outputs = { self, nixpkgs, utils }:
